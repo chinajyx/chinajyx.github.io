@@ -3,243 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站 - chinajyx</title>
+    <title>我的网站 - chinajyx</title>
     <style>
-        /* ===== 全局样式 ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* ===== 主卡片 ===== */
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 24px;
-            padding: 50px 40px;
-            max-width: 700px;
-            width: 100%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif;
             text-align: center;
-            transition: transform 0.3s ease;
+            padding: 50px;
+            background-color: #f0f4f8;
         }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* ===== 头像 ===== */
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px;
-            font-size: 48px;
-            color: white;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-            user-select: none;
-        }
-
-        /* ===== 标题 ===== */
         h1 {
-            font-size: 32px;
-            color: #2d3748;
-            margin-bottom: 6px;
+            color: #2c3e50;
+            font-size: 48px;
         }
-
-        .subtitle {
-            font-size: 18px;
-            color: #718096;
-            margin-bottom: 20px;
+        p {
+            color: #555;
+            font-size: 20px;
         }
-
-        .badge {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 4px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
-
-        /* ===== 分隔线 ===== */
-        .divider {
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 2px;
-            margin: 0 auto 24px;
-        }
-
-        /* ===== 介绍文字 ===== */
-        .bio {
-            font-size: 16px;
-            color: #4a5568;
-            line-height: 1.8;
-            margin-bottom: 28px;
-        }
-
-        /* ===== 社交按钮 ===== */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            flex-wrap: wrap;
-            margin-bottom: 28px;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 22px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .social-btn.github {
-            background: #24292e;
-            color: white;
-        }
-        .social-btn.github:hover {
-            background: #1a1e22;
-            transform: scale(1.05);
-        }
-
-        .social-btn.email {
-            background: #e53e3e;
-            color: white;
-        }
-        .social-btn.email:hover {
-            background: #c53030;
-            transform: scale(1.05);
-        }
-
-        .social-btn.blog {
-            background: #3182ce;
-            color: white;
-        }
-        .social-btn.blog:hover {
-            background: #2b6cb0;
-            transform: scale(1.05);
-        }
-
-        /* ===== 技能标签 ===== */
-        .skills {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 28px;
-        }
-
-        .skill-tag {
-            background: #edf2f7;
-            color: #2d3748;
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        /* ===== 底部 ===== */
-        .footer {
-            font-size: 13px;
-            color: #a0aec0;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-            margin-top: 10px;
-        }
-
-        .footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        /* ===== 响应式 ===== */
-        @media (max-width: 480px) {
-            .card {
-                padding: 30px 20px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            .social-btn {
-                padding: 8px 16px;
-                font-size: 13px;
-            }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-
-    <div class="card">
-
-        <!-- 头像 -->
-        <div class="avatar">🚀</div>
-
-        <!-- 标题 -->
-        <h1>你好，我是 chinajyx</h1>
-        <p class="subtitle">🎯 正在学习 Web 开发</p>
-        <span class="badge">✨ GitHub Pages 已上线</span>
-
-        <div class="divider"></div>
-
-        <!-- 介绍 -->
-        <p class="bio">
-            欢迎来到我的个人小站！这是我用 <strong>GitHub Pages</strong> 搭建的第一个网站。
-            目前正在努力学习前端开发，希望有一天能做出更酷的东西 🧑‍💻
-        </p>
-
-        <!-- 技能标签 -->
-        <div class="skills">
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript (学习中)</span>
-            <span class="skill-tag">Git</span>
-        </div>
-
-        <!-- 社交按钮 -->
-        <div class="social-links">
-            <a href="https://github.com/chinajyx" target="_blank" class="social-btn github">
-                🐙 GitHub
-            </a>
-            <a href="mailto:你的邮箱@example.com" class="social-btn email">
-                ✉️ 邮箱
-            </a>
-            <a href="https://chinajyx.github.io" target="_blank" class="social-btn blog">
-                🌐 本站
-            </a>
-        </div>
-
-        <!-- 底部 -->
-        <div class="footer">
-            © 2026 chinajyx · 用 ❤️ 和 GitHub Pages 制作
-        </div>
-
+    <div class="box">
+        <h1>🎉 欢迎来到我的网站！</h1>
+        <p>GitHub Pages 部署成功 🚀</p>
+        <p>我是 chinajyx，这是我的第一个网页</p>
     </div>
-
 </body>
 </html>
